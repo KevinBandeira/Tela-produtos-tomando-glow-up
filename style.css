@@ -82,12 +82,13 @@ body {
 .fundo_solo {
     cursor: pointer;
     text-align: center;
-    width: 270px; /* Aumentado 15% de 195px */
+    width: 300px; /* Aumentado 15% de 195px */
     height: 358.8px; /* Aumentado 15% de 312px */
     background: #FFFFFF;
     box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
+
 
 .fundo_solo div {
     width: 100%;
@@ -107,12 +108,12 @@ body {
 
 /* Coração com borda (vacío) */
 .far.fa-heart {
-    color: red; /* Coração com borda vermelha */
+    color: #184DAB; /* Coração com borda vermelha */
 }
 
 /* Coração preenchido */
 .fas.fa-heart {
-    color: red; /* Coração preenchido */
+    color: #184DAB; /* Coração preenchido */
 }
 
 .icone_produto_solo{
@@ -126,7 +127,7 @@ body {
 
 .desc {
     margin-top: 1vw;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     width: 95%;
     width: 100%;
@@ -138,11 +139,41 @@ body {
     background-color: #184DAB; 
     color: white;
     height: 5vh;
-    width: 60%;
+    width: 70%;
     border: none;
     border-radius: 10px;
 }
 
 #button-prox {
-    border: 5px solid red;
+    width: 9.5%;
+}
+
+#button-ante {
+    width: 10%;
+}
+
+.carousel {
+    margin-top: 4vw;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #184DAB;  /* Adiciona um fundo para destacar os ícones */
+    border-radius: 50%; /* Forma circular */
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+    display: none; /* Remove símbolos duplicados se existirem */
+}
+
+
+@media screen and (max-width: 600px) {
+    #button-prox {
+        width: 15%;
+    }
+    
+    #button-ante {
+        width: 10%;
+    }
 }
